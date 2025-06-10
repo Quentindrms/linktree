@@ -13,19 +13,18 @@
 body {
   height: auto;
   background: url("./img/background.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
   color: white;
 }
 
 .main-subtitle {
-  margin-bottom: 70px;
+  margin-bottom: 16px;
 }
 
 .avatar {
   width: 200px;
-  height: auto;
-  clip-path: circle(40%);
+  height: auto; 
+  clip-path: circle(40%)
 }
 
 .link-list {
@@ -39,16 +38,28 @@ body {
   border: 2px solid black;
   border-radius: 10px;
   align-self: center;
-  width: 35%;
+  width: 45%;
   text-align: center;
+  font-size: 40px;
+  padding: 5px;
+}
+
+.link-list-title:hover{
+  background-color: #d3eaf2;
 }
 
 .link {
   text-decoration: none;
   color: white;
-  font-size: 25px;
   align-content: center;
 }
 
 @media screen and (max-width: 750px) {
+    .link-list-title{
+        font-size: 36px;
+        overflow-wrap: break-word;
+    }
+    .link-list{
+      gap: 8px;
+    }Ï
 }
