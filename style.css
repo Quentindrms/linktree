@@ -2,6 +2,16 @@
   font-family: 'Noto-sans';
   src: url(./fonts/Noto-sans.ttf);
 }
+
+@keyframes color{
+  from{
+    background: none;
+  }
+  to{
+    background-color: #d3eaf2;
+  }
+}
+
 * {
   margin: 0;
 }
@@ -36,7 +46,7 @@ footer {
 .avatar {
   width: 120px;
   height: auto;
-  clip-path: circle(40%)
+  clip-path: circle(40%);
 }
 
 .link-list {
@@ -61,7 +71,8 @@ footer {
 }
 
 .link-list-title:hover {
-  background-color: #d3eaf2;
+  animation-name: color;
+  animation-duration: 1s;
 }
 
 .link {
