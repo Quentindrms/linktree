@@ -49,6 +49,7 @@ html{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    gap: 30px;
 }
 
 .left-widget{
@@ -100,5 +101,43 @@ html{
 }
 
 .main-part{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
+.main-title{
+    margin-top: 10px;
+    color: #78a1bb;
+    font-family: 'Glacial-indifference-bold';
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.container-experience{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.experience-name{
+    font-family: 'Glacial-indifference-bold';
+    text-transform: uppercase;
+    font-weight: 0;
+}
+
+.experience-list{
+    font-family: 'Gidole-regular';
+    list-style-type: circle;
+    padding-left: 15px;
+}
+
+.experience-duration{
+    font-family: 'Gidole-regular';
+    font-style: italic;
+}
+
+.experience-commentary{
+    font-family: 'Gidole-regular';
+    font-style: italic;
 }
