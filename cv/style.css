@@ -24,6 +24,8 @@ html{
 
 .header{
     background-color: #78a1bb;
+    position: relative;
+    left: 25%;
 }
 
 .full-name{
@@ -39,6 +41,7 @@ html{
     font-size: 24px;
     font-family: 'Glacial-indifference-regular';
     text-align: center;
+    z-index: 0;
 }
 
 .body{
@@ -53,6 +56,10 @@ html{
 }
 
 .left-widget{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
     background-color: #2f2f3a;
     width: 25%;
     height: 100vh;
@@ -60,6 +67,12 @@ html{
     flex-direction: column;
     align-items: center;
     gap: 10px;
+}
+
+.avatar{
+    width: 150px;
+    height: auto;
+    clip-path: circle(42%);
 }
 
 .left-widget-title{
@@ -128,7 +141,7 @@ html{
 
 .experience-list{
     font-family: 'Gidole-regular';
-    list-style-type: circle;
+    list-style-type: disc;
     padding-left: 15px;
 }
 
