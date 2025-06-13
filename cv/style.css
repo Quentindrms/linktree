@@ -156,6 +156,7 @@ html {
 
 .main-title {
     margin-top: 10px;
+    margin-left: 15px;
     color: #78a1bb;
     font-family: 'Glacial-indifference-bold';
     font-size: 24px;
@@ -190,4 +191,9 @@ html {
     font-family: 'Gidole-regular';
     font-style: italic;
     margin-left: 25px;
+}
+
+a{
+    text-decoration: underline;
+    color: #eff9f2;
 }
