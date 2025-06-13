@@ -22,17 +22,37 @@ html {
     padding: 0;
 }
 
-.header {}
+.wrapper{
+    display: flex;
+}
 
 .header-container {
+    margin-top: 25px;
     background-color: #78a1bb;
     position: relative;
-    z-index: 0;
+    z-index: -1;
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 12px;
+    padding: 30px;
+
+}
+
+.header-container::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    right: 0;
+}
+
+.header-sub-container{
+    display: flex;
+    flex-direction: column;
 }
 
 .full-name {
@@ -58,7 +78,7 @@ html {
 
 .page-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     gap: 30px;
 }
@@ -70,7 +90,7 @@ html {
 
     background-color: #2f2f3a;
 
-    width: 25%;
+    width: 22%;
     min-height: 100vh;
     max-height: max-content;
 
@@ -78,6 +98,8 @@ html {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+
+    margin-left: 2vw;
 }
 
 .avatar {
@@ -143,7 +165,7 @@ html {
 .container-experience {
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
+    margin-left: 20px;
     gap: 10px;
 }
 
@@ -156,7 +178,7 @@ html {
 .experience-list {
     font-family: 'Gidole-regular';
     list-style-type: disc;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 .experience-duration {
