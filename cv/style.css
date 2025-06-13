@@ -13,82 +13,93 @@
     src: url(./fonts/glacial-indifference.regular.otf);
 }
 
-html{
+html {
     font-size: 16px;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.header{
+.header {}
+
+.header-container {
     background-color: #78a1bb;
     position: relative;
-    left: 25%;
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
 }
 
-.full-name{
+.full-name {
     font-size: 32px;
     letter-spacing: 3px;
     color: #2f2f3a;
     font-family: 'Glacial-indifference-bold';
     text-transform: uppercase;
     text-align: center;
+    align-self: center;
 }
 
-.header-recap{
+.header-recap {
     font-size: 24px;
     font-family: 'Glacial-indifference-regular';
     text-align: center;
-    z-index: 0;
+    align-self: center;
 }
 
-.body{
+.body {
     background-color: #eff9f2;
 }
 
-.page-container{
+.page-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 30px;
 }
 
-.left-widget{
-    position: relative;
-    left: 0px;
-    top: 0px;
+.left-widget {
+    position: static;
     z-index: 1;
+    top: 0px;
+
     background-color: #2f2f3a;
+
     width: 25%;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: max-content;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
-.avatar{
+.avatar {
     width: 150px;
     height: auto;
     clip-path: circle(42%);
 }
 
-.left-widget-title{
+.left-widget-title {
     font-family: 'Glacial-indifference-bold';
     font-size: 24px;
     color: #78a1bb;
     text-transform: uppercase;
 }
 
-.left-widget-list{
+.left-widget-list {
     list-style-type: none;
     text-align: justify;
     color: #eff9f2;
 }
 
-.introduction{
+.introduction {
     width: 90%;
     height: auto;
     text-align: justify;
@@ -97,29 +108,31 @@ html{
     font-family: 'Gidole-regular';
 }
 
-.contact{
+.contact {
     text-align: center;
     font-family: 'Gidole-regular';
 }
 
-.expertise{
+.expertise {
     width: 90%;
     overflow-wrap: break-word;
     font-family: 'Gidole-regular';
+    text-align: justify;
 }
 
-.interest{
+.interest {
     text-align: center;
     font-family: 'Gidole-regular';
 }
 
-.main-part{
+.main-part {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    position: relative;
 }
 
-.main-title{
+.main-title {
     margin-top: 10px;
     color: #78a1bb;
     font-family: 'Glacial-indifference-bold';
@@ -127,30 +140,32 @@ html{
     text-transform: uppercase;
 }
 
-.container-experience{
+.container-experience {
     display: flex;
     flex-direction: column;
+    margin-left: 30px;
     gap: 10px;
 }
 
-.experience-name{
+.experience-name {
     font-family: 'Glacial-indifference-bold';
     text-transform: uppercase;
     font-weight: 0;
 }
 
-.experience-list{
+.experience-list {
     font-family: 'Gidole-regular';
     list-style-type: disc;
-    padding-left: 15px;
+    margin-left: 50px;
 }
 
-.experience-duration{
+.experience-duration {
     font-family: 'Gidole-regular';
     font-style: italic;
 }
 
-.experience-commentary{
+.experience-commentary {
     font-family: 'Gidole-regular';
     font-style: italic;
+    margin-left: 25px;
 }
